@@ -1,0 +1,27 @@
+At first there were only base actions and variables, later programmers invented functions and after they built structures that can be sent
+from 1 function to other.
+(Encapsulation)
+Break it to capsules using 2 stages
+First stage: Unite all the functions and all the variables that are focusing on the same subject, good example is like tick tac toe game
+where one unit will be responsible about the board, other unit will deal with the user, and third one will be responsible about visual effects...
+Second stage: Hiding info, some of the functions that are inside the unit are not visible to other units.
+This is useful in case we want to maintain a better way of managing your code. If every unit has access to other units things, we end up with a code that is going to be a pain in the ass
+to change since for every change you will do you will need to make, changes in all the other units can access it. But If we hide the info from other units we can focus changes on a certain
+unit instead all over them. In codes that use these principals its easier to debug, to find fields and to work with overall.
+
+This leads us to the words that dominate classes: private, public
+for example:
+class MyAss {
+    public void publicMethod() {...}
+    private void privateMethod() {...}
+}
+...
+MyAss obj = new MyAss();
+obj.publicMethod(); //works fine
+obj.privateMethod(); //doesn't compile! since its private!
+those words are called visibility modifiers!
+
+If we don't declare on a variable/method that he is private/public we get something in-between (more on this later)
+Conventions:
+first we start with public variables, then private ones.
+then we use other fields.

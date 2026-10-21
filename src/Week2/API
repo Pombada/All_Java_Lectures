@@ -1,0 +1,10 @@
+Public variables - are the API.
+Private ones are the implementation.
+We later will learn how to add an HTML file that will include the API (We will avoid mentioning private variables)
+
+Minimal API:
+Every object is born in order to fill some defined job, and it fills it for other objects and all the objects (beside main) provides service to some other object.
+so think about the classes as clients, each need serve the other and eventually other programmers.
+
+The guideline for minimal API is KEEP IT SIMPLE, whatever your API does it should do exactly only that!
+Don't over-add shit.

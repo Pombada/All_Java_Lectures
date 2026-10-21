@@ -1,0 +1,31 @@
+When a variable need to get multiple values, for example day_of_the_week this can get 7 values.
+Thus we will might want to make an enum for this case.
+so for example we will define a checkers piece that can be black or white
+enum PieceColor { BLACK, WHITE}
+class Piece {
+    private PieceColor color
+    //constructor
+    public Piece(PieceColor color) {
+    this.color = color;
+    }
+    public static void main(String[] args) {
+        Piece whitePiece = new Piece(PieceColor.WHITE);
+    }
+
+}
+We can also make Enum arrays!
+so for example:
+enum Mark {BLANK, X , O }
+class Board {
+    public static final int SIZE = 3;
+
+    private Mark[][] board = new Mark[SIZE][SIZE];
+    /*enum default value is null*/
+    public Board() {
+    for(int row = 0; row < board.length; row++) {
+        for(int col = 0; col < board[row].length; col++) {
+            board[row][col] = Mark.BLANK;
+        }
+    }
+    }
+}

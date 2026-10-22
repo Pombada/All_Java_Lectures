@@ -1,0 +1,3 @@
+Encapsulation -Makes every module have a set responsibility, the tools we will use for will be classes.
+Information hiding - Enforces strong encapsulation , the tools we use for this are access modifiers.
+Abstraction - Makes code less complex, Users arent effected by changes in implementation. Interfaces Abstract Classes.

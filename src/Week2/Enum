@@ -1,5 +1,6 @@
 When a variable need to get multiple values, for example day_of_the_week this can get 7 values.
 Thus we will might want to make an enum for this case.
+But you can make setters for enums but you don't want to make these changes. (It's unwanted behaviour) so don't make setters on enum classes.
 so for example we will define a checkers piece that can be black or white
 enum PieceColor { BLACK, WHITE}
 class Piece {
@@ -13,6 +14,7 @@ class Piece {
     }
 
 }
+
 We can also make Enum arrays!
 so for example:
 enum Mark {BLANK, X , O }

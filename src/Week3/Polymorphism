@@ -1,0 +1,4 @@
+In CS we defined Polymorphism as different implementation for the same method
+so for example we could define interface as movement and then define the sub functions
+of that movement interface differently for every class. Thus we can be indifferent to the sub classes.
+the polymorphism connects well to the abstraction principle since we write general code for something.

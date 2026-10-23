@@ -1,0 +1,21 @@
+Interface is a list of methods and we can define all the methods in there that you need in order to do something specific
+for example: Assume you have a child that roams in a world and you want him to be able to lift anything that has the attachTo method
+So you define:
+interface Carriable {
+void attachTo(Child child);
+void unAttach();
+}
+
+Notes: You can't create instances of the interface! and usually he doesn't actually contain code.
+the interface just defines what method an object needs to have so we could be able to lift him.
+also the class has to officially declare that she implements the interface
+Overall interface is like a contract on a class, ALL the methods in the interface have to be public!!!
+
+so in the class definition we do:
+class FurFly implements Carriable {
+    public void attachTo(){
+    }
+    public void unAttach(){
+    }
+}
+The class won't compile if it will not contain the attachTo, and unAttach methods.

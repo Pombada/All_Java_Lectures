@@ -1,0 +1,40 @@
+In case we have a function that accepts every object that satisfies the requirements of a certain interface,
+if that function accepts a certain type of object as an input but we want to accept every instance of a class
+that implements the interface I know what i wrote sound like poop salad of words so for example:
+
+class anna {
+void carry(Snowball ball){
+    ball.attachTo();
+    ....
+    ball.unAttach();
+    }
+}
+
+interface carriable (){
+void attachTo (Child child);
+void unAttach();
+}
+
+class FurFly implements Carriable{
+void attachTo (Child child){...}
+void unAttach(){...}
+}
+
+
+class Snowball implements Carriable{
+void attachTo (Child child){...}
+void unAttach(){...}
+}
+
+note the change we made, we had anna do all the things by herself she had carry and had the attack and unattach methods
+after we made the interface carriable we note that the method carry in anna's class accepts only Snowball, so how do we change
+it that it will accept any other class?
+So lets make Carriable C (like template in C++ the whole point here is to make the object that those things could accept a general type)
+so now we can do Carriable c = new FurFly();  this is allowed even that Carriable is a different type from FurFly
+this is called casting! this works only since FurFly implements Carriable!
+Since Carriable is the common factor to FurFly and Snowball we define them as a sub type compare to Carriable
+so the casting from lower type to upper one is called UPCAST so Carriable c = new FurFly(); is an UPCAST
+also carry(new FurFly()); that's an UPCAST as well
+here's the trick, if we used an upcast and lets say Snowball has other methods as well, we wont be able to access them
+since once we upcasted we can only use the methods of the interface! so take that in consideration!
+we can also do DOWNCAST but its less useful and irrelevant for now.

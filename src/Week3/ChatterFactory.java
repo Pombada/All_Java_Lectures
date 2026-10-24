@@ -11,12 +11,18 @@ class ChatterFactory  {
         Chatter chatter = null;
         System.out.println(String.format("======= creating %s chatter =======", arg));
         switch(arg) {
+
+
             case "echo":
                 chatter = new EchoChatter(getStringsFromUser("replies to illegal requests"));
                 break;
+
+
             case "human":
                 chatter = new HumanChatter();
                 break;
+
+
             case "silent":
                 System.out.println("Enter statement for silent chatter:  ");
                 String statement = scanner.nextLine();
@@ -24,6 +30,16 @@ class ChatterFactory  {
                 int percentage = scanner.nextInt();
                 scanner.nextLine();
                 chatter = new SilentChatter(statement,percentage);
+                break;
+
+
+            case "toddler":
+                System.out.println("Enter a phrase that the toddler like");
+                String likedPhrase = scanner.nextLine();
+                System.out.println("Enter a chatter name to use if phrase not found " );
+                String chatterName =scanner.nextLine();
+                Chatter chatterIfPhraseNotFound = build(chatterName);
+                chatter = new Toddler(likedPhrase,chatterIfPhraseNotFound);
                 break;
         }
        System.out.println(String.format("======= %s chatter created =======\n", arg));

@@ -1,0 +1,24 @@
+We can use many if statements and else if in order to try and meet a condition but we can use
+switch instead.
+so for example:
+Chatter chatter;
+switch(arg) { //does a correct string comparison (not reference comparison)
+ case "echo";
+    chatter = new EchoChatter(new String[] { "what "});
+    break;
+ case "other chatter";
+    chatter = new OtherChatter();
+    break;
+ default:
+    chatter = null;
+
+}
+
+this comes instead of if and else, the switch is more of cases that should happen when we want
+to distinguish between multiple doable options. The break is necessary because if we don't
+the switch will continue through all the cases and do all of them.
+
+also you can't send reference to switch cases, so if we named echo some var and then sent it, it wouldn't work
+only if its defined as a constant (private static final)
+
+also you can enter multiple cases at once like "echo","Echo","ECHO"

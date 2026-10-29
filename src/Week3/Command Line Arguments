@@ -1,0 +1,6 @@
+See EchoChatter , Chat classes and Chatter interface.
+Overall we want that when the user starts a chat we would like him to pick what type of chat he wants
+since Chatter is an interface of EchoChatter and Chat and main can accept an array of strings
+we can ask from main to manage a conversation between multiple chatters
+So now we will define in chat an array of chatters that will be the size of the args that main gets
+then we will use a factory to initialize each of them.

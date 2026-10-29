@@ -1,1 +1,33 @@
-Java version of the shell
+Java version of the shell from there we can create variables
+Assume we want to create a variable and then autocomplete it we press tab, after pressing the first letter
+but if there are multiple variables with the same name the jshell will suggest us possible completions.
+/vars - check all variables assigned thus far
+
+You can define everything in the jshell, classes and methods.
+we create the following method:
+jshell> int factorial(int n){
+   ...>     if (n <=1)
+jshell> int factorial(int n){
+   ...>     if (n <=1)e all possible completions; total possible completions: 1,414>
+   ...>     return n;
+   ...>     return n*factorial(n-1);
+   ...> }
+|  created method factorial(int)
+
+jshell> factorial(10)
+$5 ==> 3628800
+notice when we used it the 5$ sign is actually entertaining, since we didn't create a variable to
+"save " our requested result, jshell created one for us!
+
+The jshell is useful for understanding java syntax. (At least at the beginning)
+
+
+Casting for primitive variables on java - in case you want to do it you need to mention the
+type of convertion. once you do it, For example:
+double d = 5.3;
+int n = (int) d; (it rounds it down)
+this means you wanted to cast the double to int.
+Notice that dividing int's results in rounding down to the number.
+now dividing 2 different variables the result will always be the most complex variable.
+so int/double (or vice verse) the result will be double.
+short/int will be int and etc...

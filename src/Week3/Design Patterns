@@ -4,4 +4,5 @@ The first Design pattern we will talk about is Factory- In case we need to make 
 we will make a factory specifically for this, he will create the instances and deal with them so other classes will deal with the program to interface
 while it deals with the implementation.
 when a change will occur in the list of changes the factory will need to change but only him!
-In other words its a class that is a convention to use and to produce new items with
+In other words its a class that is a convention to use and to produce new items with.
+

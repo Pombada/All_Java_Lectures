@@ -1,0 +1,11 @@
+It's a design pattern, the pattern defines a one to many dependency between objects and when one object (The Subject/Publisher)
+changes state, all its dependents  (Observers/Subscribers) are notified and updated automatically.
+so the subject has a list of observer objects, and it can remove or add them to the list.
+It also notifies the registered ones when an event has occurred.
+
+The observers/subscribers has only an update method and action, when they get updated they simply take action/don't take action
+based on the required action.
+/**
+ * Implement the observer pattern such that BrowserNewsApp and MobileNewsApp register to NewsDesk on creation
+ * and NewsDesk updates the registered apps whenever a new push arrives
+ */

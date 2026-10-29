@@ -6,6 +6,9 @@ void attachTo(Child child);
 void unAttach();
 }
 
+Interfaces are public by default,
+when you implement @Override is the best practice
+
 Notes: You can't create instances of the interface! and usually he doesn't actually contain code.
 the interface just defines what method an object needs to have so we could be able to lift him.
 also the class has to officially declare that she implements the interface
@@ -19,3 +22,5 @@ class FurFly implements Carriable {
     }
 }
 The class won't compile if it will not contain the attachTo, and unAttach methods.
+
+

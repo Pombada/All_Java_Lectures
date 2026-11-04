@@ -1,0 +1,2 @@
+You can write multiple ctr's/methods to the same class if each accept a different parameter.
+You can't use overloading in case a method accepts the same type of parameters but returns a different type.

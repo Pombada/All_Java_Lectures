@@ -1,0 +1,12 @@
+Logical partition of code
+    A package is a namespace that organizes a set of related classes and interfaces.
+    similar to folder in our computers.
+    Adds permissions.
+
+For example - java.util is a package its components (interfaces implementations etc...) all logically belong to the same package
+and they are closely related.
+
+Class members access permissions when we import a package and we try to access a default member of the class that is contained
+within the imported package we will get a compilation error since default doesn't grant access to those outside the package.
+classes can be defined as default as well thus they won't be accessible from outside the package.
+the public classes define the package API.

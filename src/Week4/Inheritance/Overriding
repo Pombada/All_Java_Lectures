@@ -1,0 +1,11 @@
+Extending a class allows us to modify the behaviour of inherited public or protected methods.
+This is called overriding.
+
+The procedure is simple: we Re-implement the method using the same signature, return values and parameters.
+Sometimes we want to access the parent method and add a few improvements of our own in this case we use the word
+super - this keyword gives us access to our parent-class
+super.method() calls the super class implementation in a ctr it calls the super class ctr.
+
+you can call an empty super() only if the parent has an empty ctr, else it will generate a compiler error
+however there will always be a call of the sub class to the super class ctr default so if the super class has no default one.
+you will get an error when calling the ctr of public B

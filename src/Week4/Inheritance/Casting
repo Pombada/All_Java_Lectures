@@ -1,0 +1,18 @@
+Implicit vs explicit casting
+Up-casting can be implicit - in this case the compiler decides which type is the object.
+But it can also be explicit, where we can tell the compiler the exact casting type (for example like (int)(Math.random()) or whatever)
+Usually there is no reason to use explicit up-casting.
+
+Down Casting - similar to down syndrome we take a fully functioning thing and downgrade it.
+its more complex to achieve but overall its when we assign a sub-class to a super class for example: Animal animal;
+Cow c = (Cow) animal;
+however we can't do Cow c = animal;
+
+The problems that can occur as a result from downcasting - Since a reference of type  C can potentially be cast to any class that extends / implements C. Such code will always compile.
+however casting can fail at run time and run-time errors are very expensive it takes time, reputation, money since you might not discover them until you actually use the product in a certain way.
+(Just like a down syndrome baby, 9 months of investment to get a bituah leomi boy)
+There is almost always a better alternative to down casting (ABORTION!, ok ill stop now..)
+Also flexibility is shrunk once we decided to do down casting we take a code that had more functions and take away a few privileges which makes no sense.
+Also it goes against our principals of efficient coding.
+
+

@@ -1,0 +1,2 @@
+Private elements are not accessible to sub - class
+you will receive a compilation error if you will try, however public data types and protected data types are available.

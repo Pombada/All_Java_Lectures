@@ -1,0 +1,17 @@
+Extending interfaces - interfaces can have sub interfaces by using the extends keyword and the subclasses that use
+the sub interface are obligated to implement the super interface too.
+
+for example:
+
+public interface MyInterface{
+    public void superFoo();
+    }
+public interface MySubInterface extends MyInterface{
+    public int subFoo();
+}
+
+public class MyClass implements MySubInterface {
+    public void superFoo(){...}
+    public int subFoo(){...}
+}
+notice we have to implement both!

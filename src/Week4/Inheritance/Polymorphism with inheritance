@@ -1,0 +1,3 @@
+We can use upcast on a class that extends from super class,
+we also need to understand that if we use upcast we can use only the upcast methods (regardless if the type that was casted had more methods) the concrete type is the one
+that will generate.

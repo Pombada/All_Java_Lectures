@@ -1,0 +1,7 @@
+Data members, methods and ctr's can get the protected modifier (its alternative to public of private)
+Sub - classes have access to protected elements they inherit.
+problem with the use of protected is that it becomes a part of the programs API.
+Also it becomes harder to understand how to extend a class.
+harder to modify a class that uses protected data.
+
+Usually we will prefer to use private modifier whenever possible, knowing when to use protected comes with skill.

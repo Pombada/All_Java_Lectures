@@ -1,0 +1,11 @@
+This is a java operator taht allows us to check whether an object is an instance of a given
+class.
+Animal animal = new Cow();
+if (animal instanceof Cow) // this line will return true {
+here instanceof could be used as a safety measure against the runtime errors previously presented.
+It's also a problem however since is still prone to bugs also this code is still inflexible.
+resulting in same crap we ended earlier.
+if we check for every class the instance of when we write a new class we need to edit it again.
+
+The solution for this is a common API thus we use 1 method that is common to all of them and there we can run our code that won't care
+what subclass is dealt with.

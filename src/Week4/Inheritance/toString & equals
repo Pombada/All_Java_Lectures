@@ -1,0 +1,7 @@
+toString - representation of the object for the user, this belongs to java.object.lang
+we usually override that method since the one we inherit is usually useless
+
+equals - checks if 2 objects are the same, the reason we don't use the operator == is since java is defining this operator to compare between memory addresses.
+  so again we override this one as well according to our definition of equals.
+
+  Primitives we can compare with the operator == since they are not objects that inherit from objects

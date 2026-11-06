@@ -1,0 +1,7 @@
+ALT + insert = asking you to generate ctr, toString(), override methods etc..
+sout = shortcut for System.out.println();
+ctrl + x = if you dont mark anything it cuts the whole line
+ctrl + o = automatically implement a method of an interface or implements a method
+ctrl + q = open the info panel over a java object! (useful as fuck)
+ctrl + space = autocomplete in case of a method pick
+ALT + SHIFT + ARROW UP/DOWN = drags a line up or down

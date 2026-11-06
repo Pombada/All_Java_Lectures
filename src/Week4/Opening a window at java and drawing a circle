@@ -1,0 +1,26 @@
+In order to open a window we use java internal windows UI which is named JFRAME
+so we do public class GamePanel extends JPANEL {
+@override
+protected void paintComponent(Graphics g) {
+    super.paintComponent(g);
+    g.setColor(Color.Blue) //changes the circle color to blue
+    g.fillOval(300,200,50,50);//this draws a black circle
+
+
+ JFRAME frame = new JFRAME("GUI"); (it takes title)
+ public static void main(String[] args) {
+// now the window will not be displayed until we will not show it
+//so in order to expose it we do
+
+
+frame.setVisiable(true);
+frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); // this line is meant to close the window when we exit it else it will keep on existing
+
+JPANEL panel = new GamePanel();
+frame.add(panel);
+panel.setPreferredSize(new Dimension(700,500)); //describe the window size
+frame.pack(); // define the window size to match the panel size
+    }
+}
+
+

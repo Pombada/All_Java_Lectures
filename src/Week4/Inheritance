@@ -1,0 +1,44 @@
+We will need to understand relations between objects in order to simplify it
+
+First relation is Has-a relation the most basic relation between classes is the has-a relation
+(also known as the composition), This relation is formed where one object belongs to another object.
+For example: A person HAS-A name, bicycles HAVE wheels, etc....
+Compositions is implemented in java in a very straight forward manner: using data members so for example:
+
+public class Person {
+
+private String name;
+private Person mother;
+}
+
+Is-a relation, consider a class that is more specific version of an existing class, A student is a person
+students share the features of persons, but they have additional things that a common person doesn't have
+in other words: Every student is a person but not every person is a student.
+
+Inheritance - We will say class A inherits (or extends, in java) class B if A is a type of B
+- A is denoted B's sub-class, B is denoted A's super-class.
+
+for example:
+public class Person {
+
+private String name;
+private Person mother;
+
+public String getName(){
+    return this.name;
+}
+
+public class Student extends Person {
+    private int id;
+
+    public void takeExam(){
+    ....
+    }
+note that the student has all the attributes of a person
+
+Instance-of relation The is a relation should not be confused with the instance-of relation
+    Pluto is also a dog,
+    Not a type of dog but a concrete dog
+
+How is instance-of represented in java?
+By creating a new object you motherfucka!!!! (Dog class)

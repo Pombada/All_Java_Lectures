@@ -1,0 +1,13 @@
+Properties of inheritance:
+Inheritance is recursive - class A can extend class B, which extends class C....
+
+Inheritance is transitive - if A extends B and B extends C thus C also extends A ( no need to use the extend word again)
+
+In java - each class can be the super-class to unlimited number of classes (doesn't apply to primitives)
+however each class can extend at most one class.
+
+The object class- Every class in java extends java.lang.Object, implicitly
+or transitively.
+The object class itself is the only java class that doesnt extend any other class
+
+Private Data member and inheritance

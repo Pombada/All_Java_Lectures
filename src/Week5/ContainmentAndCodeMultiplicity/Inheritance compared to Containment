@@ -1,0 +1,29 @@
+What is the right way to build reusable software?
+Inheritance provides a built in mechanism for sharing code however there is an alternative mechanism to code reuse
+object composition - to hold an object ten just call its methods to get the desired functionality.
+Problem is that when we change the functionality for that object we need to know to change it to the using classes
+the good thing is that we can change the object at run time which is dope as hell in opposition for super class
+for example:
+
+
+interface Flyer { void fly(); }
+
+class WingsFlyer implements Flyer { public void fly() {/*flying with wings*/}}
+
+class SupermanFlyer implements Flyer { public void fly() {/*flying with superpowers*/}}
+
+class Bird {
+
+    Flyer flyer;
+
+    public Bird() {
+        flyer = new WingsFlyer();
+    }
+
+    public void gainSuperpower(){
+        flyer = new SupermanFlyer();
+    }
+
+}
+
+note that flyer was changed during the run time to 2 different types!

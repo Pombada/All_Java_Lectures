@@ -1,0 +1,8 @@
+The methods in interfaces are abstracts, but we can use a magic word named "default" there we can implement the method
+thus we dont have to override the method in classes that implement the method.
+In this case is like a method in the super class of inheriting class. But before we think they are the same thing, halt.
+The use of this word is for future updates to existing interfaces, assume we have an interface that we need to update
+we can simply add a default word method and it will update all the implementing classes instead of updating each class
+individually so this will be backward compatible.
+
+We can also overload existing methods in case we want to add a default method.

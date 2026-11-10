@@ -1,0 +1,21 @@
+Interfaces are not a part of class hierarchy, even that they work with combination of classes
+in java a class can only extend one other class but it can implement any number of interfaces.
+
+
+Therefore objects can have multiple types - the type of their own class, the types of all the classes
+they extend (directly and indirectly and the types of all the interfaces that they implement) also directly and indirectly.
+
+We will show an example to make it easier to understand:
+
+public class MyClass extends MyParentClass implements Printable, Clonable () {...}
+
+All the following are legal:
+MyClass myObj = new MyClass();
+MyParentClass myParentObj = myObj; // object from type of parent class
+Object obj = myObj; //the java.object class thus everyone inherit from there
+Printable myPrintableObj = myObj;  //upcast to interface
+Clonable myClonableObj = myObj; //upcast to interface
+
+When we pick between implementing inheritance to interface we would prefer interface in case they are representing the same contribution
+since interface and inheritance have is-a relation to a certain object. But inheritance is always a stronger force relation thus
+interface is preferable unless inheritance is forces a relation of the "Object A is a first and foremost a B"

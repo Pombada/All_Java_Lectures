@@ -1,0 +1,24 @@
+The motivation for that will be demonstrated in the following example: say we want to build a family of animals, dogs, cats, cows.
+each animal has a heart and can breath
+a reasonable way to do it is by defining a class hierarchy.
+So we would define the class animal and in would have had a private field with heart and they would inherit a method like breath.
+We would also like each animal to make a sound but since all animals make sound but different one, to put the code in animal class is a problem.
+so how would the Animal.speak() would look?
+so the first solution would not be to use general animal method. Which is retarded since each class (dog, cat , cow) would define their own speak.
+but then the design become complicated and its poopoo pipi. And its also the same API thus we kind of broke the logic of inheritance and polymorphism.
+
+The other solution would be to add the method to Animal class but its implementation would be empty then all over classes would override this method.
+Which is kind of like the first step just with you tricking yourself like a retard. This solution is problematic since one can forget to override the method
+or what if we create an Animal instance and then we want it to speak? since it makes no sense.
+
+The ideal solution would be Abstract classes! the idea is that those classes can yield an instance so if we make:
+public abstract class Animal {...}
+Animal animal = new Animal(...); //Compilation error
+
+we can use this idea to define abstract methods - which means we define methods without implementation every non abstract class that inherits from an abstract class
+must implement all abstract method. Thus we force our sub classes to implement certain methods. (else the code won't compile)
+
+More on abstract classes - They can inherit from other abstract classes in the case an abstract class inherits from other abstract it doesn't have to
+implement the methods of the abstract class (although it can). Abstract classes hold anything like regular classes you just can't create an instance of them.
+we will use these classes when it will make no sense to create a general object. Or when we want to force an API on a group of inheriting classes but the parent
+class cannot provide a reasonable implementation for this API.

@@ -1,0 +1,38 @@
+Our intent in this case - Define a family of algorithms, encapsulate each one and make them interchangeable.
+Assume we have a few variants to a specific algorithm like sorting,
+we have bobble sort, quicksort, etc... eventually they all do the same thing with different advantages.
+So the solution will be to define a strategy API (abstract class or interface) let each algorithm variant implement this API
+
+and instead of many conditionals, move branches into their own Strategy class.
+Use this pattern to avoid exposing complex, algorithm specific details.
+Then we create a factory and the client decides the variation upon creation.
+
+we will use the sorting problem as Example:
+public interface SortStrategy {
+    void sort(Comparable[] data);
+}
+
+public class QuickSort implements SortStrategy{
+    public void sort(Comparable[] data) {...}
+}
+
+public class MergeSort implements SortStrategy{
+    public void sort(Comparable[] data) {...}
+}
+
+public class SortStrategyFactory{
+    public static SortStrategy select(...) {...}
+}
+
+public class SomeCollection {
+    private Comparable[] contents;
+    private SortStrategy sorter;
+
+    public SomeCollection() {
+        this.sorter = SortStrategyFactory.select(...);
+        }
+    public void sortContents() {
+        this.sorter.sort(this.contents);
+        ....
+        }
+}

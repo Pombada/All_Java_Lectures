@@ -1,0 +1,3 @@
+Why not create a class that extends the client base for each algorithm variant / potential behaviour?
+Well simple answer, its retarded. Complex answer - those items are hardly is-a relation.
+Strategy pro are modularity where the inheritance doesn't offer that.

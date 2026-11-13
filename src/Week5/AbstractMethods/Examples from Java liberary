@@ -1,0 +1,5 @@
+Here we will present a few examples from java library of interfaces and abstract classes
+1. interface java.util.Collection has  add(), remove(),size()... its just a general purpose data structure
+
+2. interface java.util.List extends Collection A collection that allows access by index
+ get(index), set(index,value).

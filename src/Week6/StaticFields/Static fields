@@ -1,0 +1,3 @@
+Static is useful when we don't want to show a property of the instance but instead we want
+a copy that shares a property with all the instances of the class the static variable is also known as
+'class variable'

@@ -1,0 +1,2 @@
+Shared mutability is an issue when there are many methods that can change the value
+since it takes a lot more energy to track the change, moreover if its a public field!

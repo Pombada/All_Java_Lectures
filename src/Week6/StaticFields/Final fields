@@ -1,0 +1,8 @@
+We use final when we are not going to change the variable at all.
+When we initialize a private final field we just defend the field to be changed by us since its not public
+we just making changes. Inside the class.
+If we have a final reference then we can change the reference content but we can't change the reference itself
+when we have a final array we change the array content but we can't point on different array.
+
+mutable - a thing that we can change (like the reference content)
+immutable - a thing that can't be changed (like the reference himself)

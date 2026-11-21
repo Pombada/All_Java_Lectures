@@ -1,0 +1,4 @@
+Shadowing is when a sub class defines a data member with the same name as the parent class
+in this case the sub class does not override it.
+the same goes for static data members and methods.
+Shadowing variables is generally considered bad practice and confusing code.

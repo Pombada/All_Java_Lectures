@@ -1,0 +1,5 @@
+Static methods are methods that do not belong to any object but it belongs to the class!
+Thus static method has no access to this or any other non static fields!
+so calling the static method when you are writing in the class is the same like any other class.
+However if its public method you call the class.staticPublicMethod() you can't calling it using objects of the class
+static methods can access static fields.

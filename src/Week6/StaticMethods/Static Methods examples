@@ -1,0 +1,16 @@
+We will put static methods in the class that is most related to it
+if the most related thing is an interface we can also place the static method there.
+so when we are going to use a static method?
+a public static method will usually be used when the method creates
+an object of the class this is called a "factory method"
+a good example is a string method like String.format("Hello %s, day %d",
+userName, dayNumber)
+or String.join(", ", fruitArray)
+or String.valueOf(53)
+all these create instances of the method
+but why not use ctr's for these? because its easier to control
+what you want to do since the ctr's name will be the same but using
+method names you can control what you desire from the method.
+
+we have Math class which is a collection of static method since each operation works on a arbitrary
+object and not some math class object

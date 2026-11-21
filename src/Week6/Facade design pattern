@@ -1,0 +1,6 @@
+This design pattern is usefully when we have a large system with many classes that are independent of one another
+In many cases, clients only need a small part of such APIs
+Facade provides a simpler version of complex API the Facade handles all the dirty work and the client
+remains unaware of the complex API and is only required to know the simpler version
+so we build the class define the facade class to have the simpler api
+implement this class using the larger more complex system

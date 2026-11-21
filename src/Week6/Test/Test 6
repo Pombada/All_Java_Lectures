@@ -1,0 +1,46 @@
+1. what are the four pillars of oop?
+encapsulation, polymorphism, inheritance, (0.75 score out of 1) {abstraction}
+2. what is encapsulation,how its implemented?
+A. the way to program without showing the how (0) {separating the programming to small modules}
+B. no idea (0) {using classes}
+3. what is abstraction?
+A. no idea (0)
+B. interfaces (0.5 out of 1) {abstract classes}
+4. what is polymorphism,how to implement it?
+
+A. The way to represent the same object in different ways (1)
+B. Inheritance (0) {upcasting between object}
+
+5. What is inheritance?
+
+A. When an object inherits same properties from a different object (1)
+B. Using the word extend (1)
+
+6. What is the open close principal?
+when we want our code to be open to additions but closed for modification (1)
+
+7. What is an API
+application program interface what is shown to the user to use in our program (1)
+
+8.What is the minimal API principal?
+when we want to minimize the amount of shown code and changes on our program (1)
+
+9. What is the program to interface principle,how to implement it?
+A. when we program generally (1)
+B. using interface (0)
+
+10. What is the single responsibility principle?
+A. when each method has a single task.
+B. write small classes
+
+11. What is the single choice principle?
+No idea {whenever a software system must support a set of alternatives one and only one module in the system should know their exhuastive list}
+
+12. When do we prefer inheritance over interfaces?
+when our objects are type of something and not has a common property
+
+13. When do we prefer composition over inheritance?
+No idea (0)
+
+14. What is the purpose of the Factory DP?
+to delegate responsibility to single class

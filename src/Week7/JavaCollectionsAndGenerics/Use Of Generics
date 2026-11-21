@@ -1,0 +1,7 @@
+A generic class defines one or more type parameters
+like lists, maps. In other words the parameters of these are generic which shows they can be replaced by any non-primitive
+java type to create a supposedly new class.
+So we can use a list of Strings, list of Integers, list of lists, etc...
+when we create an object of a generic class we set concrete parameters. For example:
+LinkedList<String> myList = new LinkedList<String>();
+HashMap<String,Double> myMap = new HashMap<String,Double>();

@@ -1,0 +1,18 @@
+List - is supplied by an interface that has add, remove,contains,get,size,set, methods that are all meant to help build
+a list.
+Set - add,remove,contains,size methods.
+notice set and list has common methods do we have something more general than that? Yes!,
+the general collection is an interface that has add,remove,contains,size methods and the list and set interfaces extend him!
+
+Map - maps between keys to values, contains the methods put, remove,ContainsKet,ContainsValue,get,size,keySet,values
+also an interface!
+
+the concrete classes for each one are
+for list we have - ArrayList, LinkedList (theres more we will just study about them both in the course)
+
+Set - HashSet
+
+Map - HashMap
+
+Iterable - the mega boss, the interface collection extends him. This interface is insane all it guarantees is that
+you can just iterate it with for each loop thus you can make for each loop on all its inherits.

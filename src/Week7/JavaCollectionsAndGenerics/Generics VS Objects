@@ -1,0 +1,27 @@
+In order to define a generic class we use this symbol <> this will declare a generic class.
+For example:
+public class Node<T> {
+    private T elem;
+    public Node(T elem) {
+        this.elem = elem;
+    }
+    public T data() {
+        return this.elem;
+    }
+    ...
+}
+the T is the Object we will work with and it will work with any class so now when we will make a new object of that
+class type we will do Node<String> n = new Node<>("hello"); (you dont have to respecify the string)
+
+...
+
+String s = n.data();
+
+before generics you could make a general class but you could insert into one class multiple different instances
+like 1 of the sub objects would be Integer, the next will be String, this can cause confusion.
+
+In generic class you declare the type, then you can only add of that type! other wise you will get compilation error.
+
+In generic class if we use a linked list that holds generic types they will all be the same type (else compilation error)
+example will be given in file
+"GenericTypeExample"

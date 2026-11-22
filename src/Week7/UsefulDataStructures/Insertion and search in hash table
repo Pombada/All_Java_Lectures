@@ -1,0 +1,7 @@
+Each java class inherits from object so lets talk about the object method
+hashcode.
+When we implement hash code function we need to notice that if we override equals we need to override  hash code too.
+since if we will add another element that yields a different hash code but has same data members then equals might yield true
+but the hash code will yield a different number thus resulting in searching at the wrong place and getting a false answer.
+So we want the hash code function to base on the equals data fields so objects with same fields members will yield same hash code!
+

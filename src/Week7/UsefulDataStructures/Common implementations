@@ -1,0 +1,33 @@
+Ordered VS Sorted
+Unordered - no guaranteed iteration sequence
+Ordered - Guaranteed iteration sequence
+Sorted - ordered by some logical rule
+
+
+Common uses for List:
+An ordered collection each element has an index, can contain duplicate elements.
+One of the most common uses is ArrayList<E> , each index has a place and it is a continuous block on memory
+
+Linked list - each element has a pointer to a next element if we want to add an element at the beginning/end its simple
+for end we just update the last pointer to a new node that contains the element.
+
+Common uses for Set:
+Represents mathematical set, Can't contain duplicate elements, its unordered and unsorted but we can sort and order it.
+
+common use for set is HashSet - uses a hash table to map the elements. We have a hash table which each one of these elements contains
+a pointer to a bucket which is a list of elements.
+
+Linked Hash Set - it also keeps a hash table and has near that hash table it has a linked list that keeps the order in some way (usually by
+order of insertion)
+
+Tree Set - its implemented as a balanced tree it allows sorting since it keeps on ordering and sorting searching takes log(n)
+
+Common uses for Map:
+Its an object that maps keys to values.
+Each key can map to at most value. Can be ordered or not, sorted or not.
+Does not implement the collection interface
+can be ordered or not, sorted or not.
+
+HashMap - uses hash table same principle like hash set but this time each key shows its value once we inserted the key.
+TreeMap - same like tree set just with keys and values
+
